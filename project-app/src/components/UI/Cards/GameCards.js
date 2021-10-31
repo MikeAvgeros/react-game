@@ -33,19 +33,13 @@ const GameCards = () => {
     }
 
     while (i < 4) {
-        const randomIndex = getRandomIndex(10);
+        const randomIndex = getRandomIndex(20);
         const randomHero = cardIds[randomIndex];
 
         if (heroes.includes(randomHero)) continue;
         heroes.push(randomHero);
         i++;
-        
     }
-
-    console.log(heroes);
-
-    
-
 
     return (
         <Stack direction="row" spacing={2}>
@@ -53,6 +47,5 @@ const GameCards = () => {
         </Stack>
     );
 }
-
 
 export default GameCards;

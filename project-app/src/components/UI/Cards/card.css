@@ -1,14 +1,12 @@
 .scene {
     width: 300px;
-    height: auto;
+    height: fit-content;
     border: 1px solid green;
     margin: 40px 0;
     perspective: 600px;
 }
 
 .card {
-    width: 100%;
-    height: 100%;
     transition: transform 1s;
     transform-style: preserve-3d;
     cursor: pointer;
