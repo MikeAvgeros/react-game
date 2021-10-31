@@ -30,22 +30,20 @@ const GameCard = ({ hero }) => {
   const flip = () => {
     const flipCard = document.getElementById(heroData.name)
     flipCard.classList.toggle('is-flipped');
-  }
+  };
 
   return ready ? (
     <div className='scene'>
       <div id={heroData.name} className='card' onClick={flip} >
         <div className='card__face card__face--front'>
           <Card sx={{height:'600'}}>
-            <CardContent sx={{ backgroundColor: 'red' }}>
-            </CardContent>
           </Card>
         </div>
         <div className='card__face card__face--back'>
           <Card sx={{height: 'fit-content' }}>
             <CardMedia
             component="img"
-            height="250"
+            height="300"
             image={heroData.image.url}
             alt="hero image"
             />

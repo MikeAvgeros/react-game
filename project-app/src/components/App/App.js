@@ -1,7 +1,11 @@
 import GameCards from "./../UI/Cards/GameCards";
 
 function App() {
-  return <GameCards />;
+  return (
+    <div>
+      <GameCards />
+    </div>
+  );
 }
 
 export default App;

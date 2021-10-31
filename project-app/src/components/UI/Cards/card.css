@@ -1,8 +1,6 @@
 .scene {
     width: 300px;
     height: fit-content;
-    border: 1px solid green;
-    margin: 40px 0;
     perspective: 600px;
 }
 
@@ -30,8 +28,8 @@
 }
   
 .card__face--front {
-    background: url("https://cdn.pixabay.com/photo/2019/07/07/06/27/superhero-background-4321804__480.jpg") center center/contain;
-    height: 600px;
+    background: url("https://cdn.pixabay.com/photo/2019/07/07/06/27/superhero-background-4321804__480.jpg") no-repeat center/cover;
+    height: 650px;
 }
 
 .card__face--back {

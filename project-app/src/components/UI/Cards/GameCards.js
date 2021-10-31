@@ -30,7 +30,7 @@ const GameCards = () => {
 
     const getRandomIndex = (max) => {
         return Math.floor(Math.random() * max);
-    }
+    };
 
     while (i < 4) {
         const randomIndex = getRandomIndex(20);
@@ -42,7 +42,7 @@ const GameCards = () => {
     }
 
     return (
-        <Stack direction="row" spacing={2}>
+        <Stack direction="row" spacing={3}>
             {heroes.map(hero => <GameCard key={hero} hero={hero} />)}
         </Stack>
     );
