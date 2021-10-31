@@ -11,7 +11,7 @@ import './card.css';
 const GameCard = ({ hero }) => {
   const [heroData, setHeroData] = useState([]);
   const [ready, setReady] = useState(false);
-  const [value, setValue] = useState(null);
+  const [value, setValue] = useState(0);
 
   useEffect(() => {
     const fetchApi = async () => {
@@ -27,21 +27,17 @@ const GameCard = ({ hero }) => {
     setValue(value);
   };
 
-  const flip = (e) => {
-    console.log(e.target)
-    const flipCard = document.querySelector('.card')
+  const flip = () => {
+    const flipCard = document.getElementById(heroData.name)
     flipCard.classList.toggle('is-flipped');
   }
 
   return ready ? (
     <div className='scene'>
-      <div className='card' onClick={flip} >
+      <div id={heroData.name} className='card' onClick={flip} >
         <div className='card__face card__face--front'>
           <Card sx={{height:'600'}}>
-            <CardContent 
-              sx={{backgroundImage: 
-                "url(" + "https://cdn.pixabay.com/photo/2019/07/07/06/27/superhero-background-4321804__480.jpg" + ")"}}
-            >
+            <CardContent sx={{ backgroundColor: 'red' }}>
             </CardContent>
           </Card>
         </div>

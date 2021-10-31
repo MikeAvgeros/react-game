@@ -1,12 +1,7 @@
-// import './App.css';
-import GameCards from "../UI/Cards/GameCards";
+import GameCards from "./../UI/Cards/GameCards";
 
 function App() {
-  return (
-    <div className="App">
-      <GameCards />
-    </div>
-  );
+  return <GameCards />;
 }
 
 export default App;
