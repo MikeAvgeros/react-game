@@ -37,7 +37,7 @@ const GameCard = ({ hero }) => {
     <div className='scene'>
       <div className='card' onClick={flip} >
         <div className='card__face card__face--front'>
-          <Card sx={{height:600}}>
+          <Card sx={{height:'600'}}>
             <CardContent 
               sx={{backgroundImage: 
                 "url(" + "https://cdn.pixabay.com/photo/2019/07/07/06/27/superhero-background-4321804__480.jpg" + ")"}}

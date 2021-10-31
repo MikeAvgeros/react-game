@@ -30,8 +30,8 @@
 }
   
 .card__face--front {
-    background: red;
-    height: 300px;
+    background: url("https://cdn.pixabay.com/photo/2019/07/07/06/27/superhero-background-4321804__480.jpg") center center/contain;
+    height: 600px;
 }
 
 .card__face--back {
