@@ -28,7 +28,7 @@
 }
   
 .card__face--front {
-    background: url("https://cdn.pixabay.com/photo/2019/07/07/06/27/superhero-background-4321804__480.jpg") no-repeat center/cover;
+    background: url("https://cdn.pixabay.com/photo/2019/07/07/06/27/superhero-background-4321804__480.jpg") no-repeat left center/cover;
     height: 650px;
 }
 

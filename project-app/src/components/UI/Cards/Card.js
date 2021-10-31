@@ -69,14 +69,14 @@ const GameCard = ({ hero }) => {
                   sx={{ backgroundColor: 'purple' }} 
                   variant="contained"
                 >
-                  {`Durability: ${heroData.powerstats.durability}`}
+                  {`Defense: ${heroData.powerstats.durability}`}
                 </Button>
                 <Button 
                   onClick={handleClick} 
                   sx={{ backgroundColor: 'purple' }} 
                   variant="contained"
                 >
-                  {`Intelligence: ${heroData.powerstats.intelligence}`}
+                  {`Intellect: ${heroData.powerstats.intelligence}`}
                 </Button>
                 <Button 
                   onClick={handleClick} 
@@ -97,7 +97,7 @@ const GameCard = ({ hero }) => {
                   sx={{ backgroundColor: 'purple' }} 
                   variant="contained"
                 >
-                  {`Strength: ${heroData.powerstats.strength}`}
+                  {`Attack: ${heroData.powerstats.strength}`}
                 </Button>
               </Stack>
             </CardContent>
