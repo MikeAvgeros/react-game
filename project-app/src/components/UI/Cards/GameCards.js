@@ -1,5 +1,3 @@
-// import { Fragment } from 'react';
-// import { Card } from '@mui/material';
 import Stack from '@mui/material/Stack'
 import GameCard from './Card';
 
@@ -15,9 +13,19 @@ const GameCards = () => {
         '08',
         '09',
         '10',
-    ]
+        '11',
+        '12',
+        '13',
+        '14',
+        '15',
+        '16',
+        '17',
+        '18',
+        '19',
+        '20',
+    ];
 
-    const heroes = []
+    const heroes = [];
     let i = 0;
 
     const getRandomIndex = (max) => {
